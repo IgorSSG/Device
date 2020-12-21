@@ -1,0 +1,259 @@
+html{
+box-sizing: border-box;
+}
+
+*, ::before, ::after{
+  box-sizing: inherit;
+}
+
+body{
+  font-family: "Open Sans","Arial",sans-serif;
+  min-width: 1200px;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+  font-size: 15px;
+  line-height: 30px;
+  background-color: #fff;
+  overflow-x: none;
+  font-weight: 300;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+
+  margin: 0 auto;
+  padding: 0;
+  width: 1160px;
+}
+
+.page-header{
+  position: relative;
+  background-color: #f7e296;
+  color: #000;
+}
+
+.page-header__logo{
+  position: absolute;
+  top:-19px;
+  left: 59px;
+}
+
+.page-header__logo:hover{
+  opacity: 0.5;
+}
+
+.page-header__logo:active{
+  opacity: 0.2;
+}
+
+.main-nav{
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 28px;
+  padding-bottom: 60px;
+}
+
+.main-nav__user-list{
+  list-style: none;
+  flex-wrap:wrap ;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px;
+}
+
+.main-nav__user-item{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 27px;
+}
+
+.main-nav__user-item-search{
+  width: 540px;
+}
+
+.main-nav__search{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.main-nav__search-input{
+  position: relative;
+  width: 320px;
+  height: 30px;
+  padding: 0;
+  margin-left: 10px;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 15px;
+  font-family: "Open Sans","Arial",sans-serif;
+  color: #000;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  opacity: .5;
+}
+
+
+
+.main-nav__search-input:hover{
+  opacity: .8;
+}
+
+.main-nav__search-input:focus{
+  outline: 0;
+  opacity: 1;
+}
+
+.main-nav__search-input:focus::placeholder{
+  color:transparent;
+}
+
+.main-nav__search-btn{
+  position: absolute;
+  top:-9px;
+  left: 330px;
+  z-index: -1;
+  width: 85px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #000;
+  opacity: 0;
+  border-radius: 2px;
+}
+
+.main-nav__search-btn:focus {
+  z-index: 0;
+  color: #fff;
+  background-color: #000;
+  opacity: 1;
+  transition: all .1s linear;
+  outline: none;
+}
+
+.main-nav__search-btn:hover {
+  color: #fff;
+  background-color: #000;
+  transition: all .1s linear;
+}
+
+.main-nav__search-btn:active {
+  color: rgba(255,255,255,.3);
+}
+
+.main-nav__search-input:focus~.main-nav__search-btn {
+  z-index: 0;
+  opacity: 1;
+}
+
+.main-nav__search-label{
+  position: absolute;
+  background-image: url(../img/search.svg);
+  top: 8px;
+  left: -24px;
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 300;
+
+}
+
+.main-nav__search-label::before{
+  position: absolute;
+  content: "";
+  bottom: -12px;
+  left: 0;
+  height: 2px;
+  width: 438px;
+  background-color: #000;
+  display: none;
+}
+
+.main-nav__search-input:focus~.main-nav__search-label::before {
+    display: block;
+}
+
+.main-nav__user-item--login{
+  margin-right: auto;
+}
+
+.main-nav__user-link--login::before{
+  bottom: 4px;
+  left: -26px;
+  background-image: url(../img/black-user.svg);
+}
+
+.main-nav__user-link::before{
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+
+.main-nav__user-link{
+  color:#000;
+  position: relative;
+}
+
+
+.main-nav__user-link:hover{
+  opacity: .6;
+}
+
+.main-nav__user-link:hover::before {
+  opacity: .6;
+}
+
+.main-nav__user-link:active{
+  opacity: .3;
+}
+
+.main-nav__user-link:active::before {
+  opacity: .3;
+}
+
+.main-nav__user-link--compare::before {
+  bottom: 2px;
+  left: -20px;
+  background-image: url(../img/black-compare.svg);
+}
+
+.main-nav__user-item--cart{
+  margin-left: 35px;
+}
+
+.main-nav__user-link--cart::before {
+  bottom: 4px;
+  left: -23px;
+  background-image: url(../img/black-cart.svg);
+}
+
+
+<script src="http://localhost:35729/livereload.js"></script>
