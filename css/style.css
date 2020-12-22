@@ -1,3 +1,21 @@
+@font-face {
+  font-weight: 800;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+  url("../fonts/gilroylight.woff") format("woff");
+}
+
 html{
 box-sizing: border-box;
 }
@@ -254,6 +272,88 @@ a{
   left: -23px;
   background-image: url(../img/black-cart.svg);
 }
+
+.main-nav__list{
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.main-nav__item{
+
+}
+
+.main-nav__item--catalog{
+  width: 540px;
+  position: relative;
+}
+
+.main-nav__link--catalog::after{
+  content: "";
+  position: absolute;
+  right: -19.5px;
+  bottom: 3px;
+  width: 2px;
+  height: 16px;
+  background-color: #b8a974;
+}
+
+.main-nav__link--catalog::before{
+  content: "";
+  position: absolute;
+  right: -26.5px;
+  bottom: 10px;
+  width: 16px;
+  height: 2px;
+  background-color: #b8a974;
+}
+
+.main-nav__link--catalog:hover{
+  opacity: 0.6;
+}
+
+.main-nav__link--catalog:active{
+  opacity: 0.4;
+}
+
+.main-nav__link--catalog:hover::before,
+.main-nav__link--catalog:hover::after{
+  opacity: 1;
+}
+
+.main-nav__link--catalog{
+  position: relative;
+}
+
+.main-nav__link{
+  font-weight: 800;
+  line-height: 24px;
+  font-size:18px;
+  font-family: "Gilroy","Arial",sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  cursor: pointer;
+}
+
+.main-nav__item--delivery{
+  margin-right: ;
+  padding-right: 36px;
+}
+
+.main-nav__item--warranty{
+  margin-right: auto;
+
+}
+
+
+
+
 
 
 <script src="http://localhost:35729/livereload.js"></script>
