@@ -67,6 +67,7 @@ a{
   background-color: #f7e296;
   color: #000;
   min-height: 300px;
+  z-index: 0;
 }
 
 .page-header__logo{
@@ -87,7 +88,8 @@ a{
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
+  min-height: inherit;
 }
 
 .main-nav__user-list{
@@ -350,12 +352,19 @@ a{
 
 
 .main-nav__sub--wrap{
-  width: inherit;
+  width: 1100px;
+  display: none;
+  position: relative;
+  background-color: #f7e296;
+  height: 136px;
+  z-index: 2;
 
 }
 
-.main-nav__link--catalog:hover+.main-nav__sub-wrap {
+.main-nav__link--catalog:hover+.main-nav__sub--wrap {
   display: block;
+
+
 }
 
 .main-nav__sub-list{
@@ -401,6 +410,12 @@ a{
 
 .main-nav__sub-column a:active{
   opacity: 0.4;
+}
+
+.promo-slider{
+  position: relative;
+  margin-top: -114px;
+  z-index: 1;
 }
 
 
