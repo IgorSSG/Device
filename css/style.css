@@ -66,6 +66,7 @@ a{
   position: relative;
   background-color: #f7e296;
   color: #000;
+  min-height: 300px;
 }
 
 .page-header__logo{
@@ -86,7 +87,7 @@ a{
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 28px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .main-nav__user-list{
@@ -312,22 +313,18 @@ a{
   background-color: #b8a974;
 }
 
-.main-nav__link--catalog:hover{
+.main-nav__link:hover{
   opacity: 0.6;
 }
 
-.main-nav__link--catalog:active{
+.main-nav__link:active{
   opacity: 0.4;
-}
-
-.main-nav__link--catalog:hover::before,
-.main-nav__link--catalog:hover::after{
-  opacity: 1;
 }
 
 .main-nav__link--catalog{
   position: relative;
 }
+
 
 .main-nav__link{
   font-weight: 800;
@@ -352,7 +349,58 @@ a{
 }
 
 
+.main-nav__sub--wrap{
+  width: 640px;
 
+}
+
+.main-nav__link--catalog:hover+.main-nav__sub-wrap {
+  display: block;
+}
+
+.main-nav__sub-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 33px;
+
+
+}
+
+.main-nav__sub-list{
+  display: flex;
+  margin-top: 25px;
+
+}
+
+.main-nav__sub-column{
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+
+.main-nav__sub-column:first-child{
+  width: 240px;
+}
+
+.main-nav__sub-column a{
+  padding-bottom: 5px;
+
+  margin-top: 0;
+  color: #000;
+}
+
+
+
+.main-nav__sub-column a:hover{
+  opacity: 0.6;
+}
+
+.main-nav__sub-column a:active{
+  opacity: 0.4;
+}
 
 
 
