@@ -504,6 +504,10 @@ a{
     background-color: #f0c52e;
 }
 
+.btn:active{
+  opacity: 0.5;
+}
+
 .btn {
     position: relative;
     z-index: 1;
@@ -530,6 +534,10 @@ a{
     margin-left: 2px;
     background: 0 0;
     border: 0;
+}
+
+.promo-slider__descr-wrap .btn:active {
+    opacity: .7;
 }
 
 .btn:hover::before, .btn:focus::before {
@@ -572,9 +580,9 @@ a{
 
 }
 
-.promo-slider__specification-parameter th{
+.promo-slider__specification-names th {
   min-width: 160px;
-  font-weight: normal;
+  font-weight: 200;
 
 }
 
