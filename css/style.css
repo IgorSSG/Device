@@ -67,7 +67,7 @@ a{
   background-color: #f7e296;
   color: #000;
   min-height: 300px;
-  z-index: 0;
+
 }
 
 .page-header__logo{
@@ -354,24 +354,26 @@ a{
 .main-nav__sub--wrap{
   width: 1100px;
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #f7e296;
-  height: 136px;
+  height: 165px;
   z-index: 2;
 
 }
 
-.main-nav__link--catalog:hover+.main-nav__sub--wrap {
+.main-nav__link--catalog:hover+.main-nav__sub--wrap{
   display: block;
+}
 
-
+.main-nav__sub--wrap:hover{
+  display: block;
 }
 
 .main-nav__sub-list{
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-top: 33px;
+  margin: -3px;
+  padding-top: 33px;
   width: 640px;
 
 
@@ -379,7 +381,6 @@ a{
 
 .main-nav__sub-list{
   display: flex;
-  margin-top: 25px;
 
 }
 
@@ -582,6 +583,44 @@ a{
   line-height: 20px;
   text-align: left;
 
+}
+
+.promo-slider__controls {
+  position: absolute;
+  right: 82px;
+  bottom: 160px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 78px;
+}
+
+.promo-slider__control::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    display: none;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.promo-slider__control {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.promo-slider__input[id=promo-control-1]:checked~.promo-slider__controls label[for=promo-control-1]::before, .promo-slider__input[id=promo-control-2]:checked~.promo-slider__controls label[for=promo-control-2]::before, .promo-slider__input[id=promo-control-3]:checked~.promo-slider__controls label[for=promo-control-3]::before {
+    display: block;
 }
 
 
