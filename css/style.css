@@ -930,6 +930,7 @@ a{
   background-color: #464646;
   margin-right: auto;
   margin-top: 85px;
+  min-height: 323px;
 }
 
 .main-footer__top-line{
@@ -948,15 +949,162 @@ a{
 
 .main-footer__nav-item{
   margin-left: 62px;
+  position: relative;
 
 }
 
+.nav-item__link{
+  color: rgba(255,255,255,.7);
+}
+
+.nav-item__link:active, .nav-item__link:active::before{
+  opacity: .3;
+}
+
+.nav-item__link:hover{
+  color: rgba(255,255,255);
+}
+
+.nav-item__link:hover::before{
+  opacity: 0.7;
+}
+
+.nav-item__link::before{
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: -23px;
+  width: 13px;
+  height: 12px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+
+.nav-item__link--entrance::before{
+  left: -26px;
+  background-image: url(../img/yellow-user.svg);
+}
+
+.nav-item__link--compare::before{
+  bottom:6px;
+  background-image: url(../img/yellow-compare.svg)
+}
+
+.nav-item__link--cart::before{
+  background-image: url(../img/yellow-cart.svg)
+}
+
+
+
 .services-item__link{
+  position: relative;
   color: #fff;
   font-size: 15px;
   line-height: 36px;
 }
 
+.main-footer__nav-item--link{
+  color: #fff;
+}
+
+.main-footer__middle-line{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__services{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.main-footer__services-item{
+  min-width: 140px;
+  margin-right: 10px;
+}
+
+.services-item__link{
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.services-item__link:hover{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.services-item__link:focus{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-footer__adress,.main-footer__phone, .main-footer__phone a{
+  color: rgba(255,255,255,.7);
+}
+
+
+.main-footer__bottom-line{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.stright-line{
+
+}
+
+.stright-line::before{
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  left: 1px;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+}
+
+.main-footer__social{
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  list-style: none;
+  min-width: 145px;
+  margin: 0;
+}
+
+
+.main-footer__social-link--fb{
+  background-image: url(../img/facebook.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.main-footer__social-link--inst{
+  background-image: url(../img/instagram.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.main-footer__social-link--tw{
+  background-image: url(../img/twitter.svg);
+  width: 32px;
+  height: 32px;
+}
+
+.main-footer__developers{
+  list-style: none;
+  padding: 0;
+}
+
+.main-footer__developer-link{
+  background-image: url(../img/logo-html.svg);
+  width: 30px;
+  height: 30px;
+}
 
 
 <script src="http://localhost:35729/livereload.js"></script>
