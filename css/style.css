@@ -805,13 +805,17 @@ a{
   height: 188px;
 }
 
+.services-slider__slide-button{
+  height: 40px;
+}
 
+.services-slider__slide-button:focus, .btn::before{
 
-.services-slider__slide-button:focus{
-  background-color: #000;
   color:#f7e184;
   z-index: 2;
   position: relative;
+  opacity: 1;
+  transition: all 0.2 linear;
 }
 
 .services-slider__slide-button::after{
