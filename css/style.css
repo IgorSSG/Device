@@ -951,6 +951,7 @@ a{
   margin-right: auto;
   margin-top: 85px;
   min-height: 323px;
+  padding-bottom: 50px;
 }
 
 .main-footer__top-line{
@@ -1071,16 +1072,17 @@ a{
   display: flex;
   justify-content: space-between;
   position: relative;
+
+  margin-top: 30px;
+
 }
 
-.stright-line{
 
-}
 
 .stright-line::before{
   content: "";
   position: absolute;
-  bottom: 22px;
+  bottom: 35px;
   left: 1px;
   width: 80px;
   height: 7px;
@@ -1091,14 +1093,18 @@ a{
   display: flex;
   padding: 0;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   min-width: 145px;
   margin: 0;
+  margin-left: 40px;
 }
 
 .main-footer__social-link{
   margin-left;
 }
+
+
 
 .main-footer__social-link{
   opacity: 0.2;
@@ -1107,6 +1113,10 @@ a{
 
 .main-footer__social-link:hover{
   opacity: 0.7;
+}
+
+.main-footer__social-link:active{
+  opacity: 0.1;
 }
 
 
@@ -1141,10 +1151,21 @@ a{
 }
 
 .main-footer__developer-link{
+  display: inline-block;
   background-image: url(../img/logo-html.svg);
   width: 30px;
-  height: 30px;
+  height: 35px;
+  background-repeat: no-repeat;
+  transition: all 0.3s linear;
+  cursor: pointer;
 }
 
+.main-footer__developer-link:hover{
+  opacity: 0.7
+}
+
+.main-footer__developer-link:active{
+  opacity: 0.5
+}
 
 <script src="http://localhost:35729/livereload.js"></script>
