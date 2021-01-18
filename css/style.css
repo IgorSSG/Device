@@ -745,7 +745,7 @@ a{
   order: 1;
   width: 160px;
   margin-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-bottom: 10px;
   padding-left: 3px;
   font-weight: 800;
@@ -809,7 +809,7 @@ a{
   height: 40px;
 }
 
-.services-slider__slide-button:focus, .btn::before{
+.services-slider__slide-button:focus .btn::before{
 
   color:#f7e184;
   z-index: 2;
@@ -1166,6 +1166,199 @@ a{
 
 .main-footer__developer-link:active{
   opacity: 0.5
+}
+
+
+.modal {
+  background-color: #fff;
+  display: none;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 430px;
+  margin-top: -215px;
+  margin-left: -310px;
+  position: relative;
+}
+
+
+
+.popup-map {
+  background-color: #efebe4;
+  width: 960px;
+  height: 560px;
+  margin-top: -225px;
+  margin-left: -470px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,.44);
+}
+
+
+
+.modal__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  background-color: #f0c52e;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .3s linear;
+}
+
+.modal__close:hover{
+  opacity: 1;
+}
+
+.modal__close:active{
+  opacity: .2;
+}
+
+.modal__close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background-color: #fff;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.modal__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 30px;
+  background-color: #fff;
+  transform: translate(-50%,-50%) rotate(135deg);
+}
+
+.popup-write-us{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: none;
+  width: 960px;
+  height: 560px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  animation-name: bounce;
+  animation-duration: .6s;
+  margin-left: -480px;
+  margin-top: -280px;
+}
+
+.modal--active {
+  animation: bounce .6s;
+  display: block;
+  position: fixed;
+}
+
+
+.popup-write-us__wrap{
+  display: flex;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 93px;
+  padding-bottom: 76px;
+}
+
+.popup-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popup-input-wrap--name {
+  padding-right: 40px;
+  padding-bottom: 34px;
+}
+
+.popup-input-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-write-us label {
+  width: 360px;
+  padding-bottom: 6px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Gilroy","Arial",sans-serif;
+  color: #000;
+  cursor: pointer;
+}
+
+.popup-write-us input:hover {
+  background-color: rgba(230,230,230,.8);
+}
+
+.popup-write-us input {
+  width: 360px;
+  height: 50px;
+  padding-top: 16px;
+  padding-right: 19px;
+  padding-bottom: 16px;
+  padding-left: 19px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans","Arial",sans-serif;
+  color: #464646;
+  background-color: rgba(230,230,230,.5);
+  border: 0;
+  outline: 0;
+}
+
+.popup-write-us input:focus {
+  background-color: #fff;
+  outline: 3px solid rgba(240,197,46,.5);
+}
+
+.popup-input-wrap--message {
+  padding-bottom: 20px;
+}
+
+.popup-input-wrap--message label {
+  padding-bottom: 8px;
+}
+
+.popup-write-us textarea {
+  width: 760px;
+  min-height: 156px;
+  padding: 14px 19px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #464646;
+  background-color: rgba(230,230,230,.5);
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+
+.popup-write-us textarea:hover{
+  background-color: rgba(230,230,230,.8);
+}
+.popup-write-us textarea:focus {
+  background-color: #fff;
+  outline: 3px solid rgba(240,197,46,.5);
+}
+
+.popup-write-us .btn {
+  width: 200px;
+  background: 0 0;
+  border: 0;
+}
+
+.popup-form .btn {
+  margin-top: 18px;
 }
 
 <script src="http://localhost:35729/livereload.js"></script>
