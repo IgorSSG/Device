@@ -811,13 +811,17 @@ a{
   height: 40px;
 }
 
-.services-slider__nav .btn:focus::before{
+.services-slider__nav .btn:focus  {
   background-color: #fff;
   color:#f7e184;
   z-index: 2;
   position: relative;
   opacity: 1;
   transition: all 0.2 linear;
+}
+
+.services-slider__nav .btn:focus::before{
+  background-color: #000;
 }
 
 .services-slider__nav .btn:active{
