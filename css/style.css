@@ -1466,7 +1466,7 @@ a{
 
 .page-content__wrap{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   width: 1160px;
   margin: 0 auto;
   padding-right: 20px;
@@ -1709,6 +1709,10 @@ a{
 
 .filter__option--radio + .filter__label--radio::before{
   background-image: url(../img/radio-off.svg);
+}
+
+.catalog-footer{
+  margin-top: 0;
 }
 
 <script src="http://localhost:35729/livereload.js"></script>
