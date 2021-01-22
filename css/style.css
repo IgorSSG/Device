@@ -1523,9 +1523,9 @@ a{
 }
 
 .filter {
-  width: 200px;
+  width: 190px;
   padding-top: 69px;
-  margin-right: 40px;
+  margin-right: 55px;
 
 }
 
@@ -1535,7 +1535,7 @@ a{
 
 .filter__item-title{
   margin: 0;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 18px;
   font-weight: 800;
   font-size: 18px;
@@ -1551,9 +1551,12 @@ a{
   border-top: 3px solid #000;
   padding-bottom: 32px;
 }
+
+
 .filter-range {
   display: flex;
   flex-direction: column;
+  margin-top: 17px;
 
 }
 
@@ -1599,5 +1602,113 @@ a{
   left: 109px;
 }
 
+.filter-range__price{
+  display: flex;
+  margin-top: 10px;
+}
+
+.filter-range__label{
+  display: flex;
+  align-items: center;
+  color: rgba(0,0,0,.2);
+}
+
+.filter-range__label--max{
+  margin-left: 25px;
+}
+
+.filter-range__input{
+  width: 45px;
+  margin-left: 5px;
+  height: 25px;
+  border: none;
+  font-family: "Gilroy", "Arial" sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: inherit;
+  color: rgba(0,0,0,.2);
+}
+
+.filter__list{
+  list-style: none;
+  margin: 0;
+}
+
+.filter__option{
+
+  color: black;
+}
+
+
+
+.filter__label {
+  position: relative;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000;
+  letter-spacing: .01em;
+  cursor: pointer;
+}
+
+.filter__label::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -40px;
+  display: block;
+  width: 27px;
+  height: 23px;
+  background-repeat: no-repeat;
+
+}
+
+.filter__option--checkbox:checked + .filter__label::before{
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter__option--checkbox + .filter__label::before{
+  background-image: url(../img/checkbox-off.svg);
+}
+
+
+.filter__label:hover::before{
+  opacity: .7;
+}
+
+.filter__label:active::before{
+  opacity: 1;
+}
+
+
+.filter__label--radio {
+  position: relative;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000;
+  letter-spacing: .01em;
+  cursor: pointer;
+}
+
+
+
+.filter__label--radio::before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -40px;
+  display: block;
+  width: 27px;
+  height: 25px;
+  background-repeat: no-repeat;
+
+}
+
+.filter__option--radio:checked + .filter__label--radio::before{
+  background-image: url(../img/radio-on.svg);
+}
+
+.filter__option--radio + .filter__label--radio::before{
+  background-image: url(../img/radio-off.svg);
+}
 
 <script src="http://localhost:35729/livereload.js"></script>

@@ -126,23 +126,23 @@
               <h3 class="filter__item-title">Цвет</h3>
               <ul class="filter__list">
                 <li class="filter__option">
-                  <input type="checkbox" class="visually-hidden filter__option--checkbox" name="black">
+                  <input type="checkbox" id="black" class="visually-hidden filter__option--checkbox" name="black" checked>
                   <label for="black" class="filter__label">Черный</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="visually-hidden filter__option--checkbox" name="white">
+                  <input type="checkbox" id="white" class="visually-hidden filter__option--checkbox" name="white">
                   <label for="white" class="filter__label">Белый</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="visually-hidden filter__option--checkbox" name="blue">
+                  <input type="checkbox" id="blue" class="visually-hidden filter__option--checkbox" name="blue" checked>
                   <label for="blue" class="filter__label">Синий</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="visually-hidden filter__option--checkbox" name="red">
+                  <input type="checkbox" id="red" class="visually-hidden filter__option--checkbox" name="red" checked>
                   <label for="red" class="filter__label">Красный</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="visually-hidden filter__option--checkbox" name="pink">
+                  <input type="checkbox" id="pink" class="visually-hidden filter__option--checkbox" name="pink">
                   <label for="pink" class="filter__label">Розвовый</label>
                 </li>
               </ul>
@@ -152,15 +152,15 @@
               <h3 class="filter__item-title">Bluetooth</h3>
               <ul class="filter__list">
                 <li class="filter__option">
-                  <input type="checkbox" class="visually-hidden filter__option--radio" name="bluetooth-on">
-                  <label for="bluetooth-on" class="filter__label">Есть</label>
+                  <input type="radio" id="bluetooth-on" class="visually-hidden filter__option--radio" name="bluetooth-on" checked>
+                  <label for="bluetooth-on" class="filter__label--radio">Есть</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="visually-hidden filter__option--radio" name="bluetooth-off">
-                  <label for="bluetooth-off" class="filter__label">Нет</label>
+                  <input type="radio" id="bluetooth-off" class="visually-hidden filter__option--radio" name="bluetooth-off" >
+                  <label for="bluetooth-off" class="filter__label--radio">Нет</label>
                 </li>
             </fieldset>
-            <button class="button button--yellow filter__submit" type="submit">Показать</button>
+            <button class="btn button--yellow filter__submit" type="submit">Показать</button>
           </div>
         </form>
       </section>
