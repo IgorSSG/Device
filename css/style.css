@@ -422,13 +422,18 @@ a{
   position: relative;
 }
 
+
+
 .promo-slider__item{
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: no-wrap;
 }
 
+.slide-active{
+  display: flex;
+}
 
 .promo-slider__item::before{
   content: "";
@@ -1715,4 +1720,3 @@ a{
   margin-top: 0;
 }
 
-<script src="http://localhost:35729/livereload.js"></script>
